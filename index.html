@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDolist</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" /> 
+   
+  </head>
+  <body onLoad ="getTime();">
+    <header>
+      <br><h1 class="logo">✅ToDo<span>list</span></br> </h1>
+    </header>
+
+    <section>
+      <div class="frontcover">
+      <div class="coverphoto" alt="photo" class="center"></div>
+      <div class="left-col">
+      </div>
+    </section>
+
+    <section>
+      <div id ="timeDate" class= "container"></div>
+    </section>
+
+    <form>
+      <input type="text" placeholder=" Add something to do: ", class="todo-input" />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+    </form>
+  <hr> 
+    <h1 class="space">ALL TASKS</h1>
+    <div class="todo-container">
+      
+      <ul class="todo-list"></ul>
+    </div>
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+				<h3>✅ToDo<span>list</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Services</a>
+					|
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© Copyright 2021. By Navarro and Fatima Picato. <i class="fas fa-phabricator"></i> .</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="#">support@todolist.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					ToDolist is the simplest and most useful  productivity tool you will ever have. Designed to track your daily tasks.
+         </p>	
+			</div>
+		</footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
